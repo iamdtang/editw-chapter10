@@ -1,8 +1,8 @@
 import JSONSerializer from '@ember-data/serializer/json';
 
 export default class ContactSerializer extends JSONSerializer {
-  normalizeFindAllResponse(store, primaryModelClass, payload, id, requestType) {
-    return super.normalizeFindAllResponse(
+  normalizeArrayResponse(store, primaryModelClass, payload, id, requestType) {
+    return super.normalizeArrayResponse(
       store,
       primaryModelClass,
       payload.data,
